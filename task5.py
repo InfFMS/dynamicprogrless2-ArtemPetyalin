@@ -17,15 +17,12 @@ variants = []
 
 for i in range(len(sequence)):
     a = sequence[i::]
-    print(a)
-    print('i     :', i)
     for j in range(i, len(sequence)):
-        print('j', j)
+
         if sequence[j] <= sequence[i]:
             a.remove(sequence[j])
 
     variants.append(len(a))
-    print(a)
 
 ans = variants[0]
 for i in range(len(variants) - 1):
