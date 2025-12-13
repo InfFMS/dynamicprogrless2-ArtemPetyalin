@@ -8,4 +8,11 @@
 
 Ответ должен быть напечатан как одно число.
 """
+counter = 0
+for i in range(1342):
+    for j in range(1341// 2 + 1):
+        for k in range(1341 // 5 + 1):
+            if i + j * 2 + k * 5 == 1341:
+                counter += 1
 
+print(counter)
